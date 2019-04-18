@@ -1,0 +1,77 @@
+@import "../libs/bootstrap/scss/my-variables"
+@import "../libs/bootstrap/scss/bootstrap"
+@import "_mixins/mixins"
+@import "../css/icon-font.min.css"
+@import "vars"
+@import "fonts"
+
+html, body
+	height: 100%
+
+	body
+		font-size: 14px
+		min-width: 320px
+		position: relative
+		line-height: 1.65
+		font-family: $default-font
+		overflow-x: hidden
+		color: $font-color-dark
+		input, textarea
+			outline: none
+			&:focus:required:invalid
+				border-color: red
+				&:required:valid
+					border-color: green
+
+.clearfix
+	display: block
+	clear: both
+	content: ""
+
+hr
+	margin: 0
+.navbar-brand
+	font-size: 15px
+	align-items: center
+	display: flex
+	font-weight: bold
+	color: $accent-color
+	text-transform: uppercase
+	// transform: matrix( 0.8,0,0,0.9,0,0)
+	// -moz-transform: matrix( 0.8,0,0,0.9,0,0)
+	// -webkit-transform: matrix( 0.8,0,0,0.9,0,0)
+	// -ms-transform: matrix( 0.8,0,0,0.9,0,0)
+.nav-item
+	+border(1px, $dark-color,right)
+	padding: 
+		left: 10px
+		right: 10px
+
+.nav-item:last-child
+	border-right: none
+
+.header-sect
+	height: 580px
+	text-align: center
+	background-image: url(../img/bg-1-1.jpg)
+	background-position: center center
+	background-size: cover
+	position: relative
+	h1
+		z-index: 1
+	h5
+		z-index: 1
+	button
+		z-index: 1
+	.layout
+		position: absolute
+		background-color: #222
+		opacity: .5
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: 0
+
+
+@import "media" // Always at the end
