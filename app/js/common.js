@@ -7,7 +7,7 @@ $(function(){
  });
 $(window).scroll(function () {
 
-	if ($(this).scrollTop() > 174) {
+	if ($(this).scrollTop() > 100) {
 		$('.nav-top').addClass('fixed-top border-bottom animated fadeInDown');
 		
 	} else {
@@ -16,4 +16,9 @@ $(window).scroll(function () {
 	}
 
 });
- 
+//  $(window).load(function() {
+
+// $(" .cnr     ").animated("fadeInUp ", "fadeOutDown");
+
+// });
+$('.equal .equal-items').equalHeights();

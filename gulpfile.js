@@ -18,6 +18,9 @@ var gulp          = require('gulp'),
 gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/animate/animate-css.js',
+		'app/libs/animate/waypoints.min.js',
+		'app/libs/jQuery.equalHeights/jquery.equalheights.js',
 		'app/libs/bootstrap/dist/js/bootstrap.js',
 		'app/js/common.js' // Always at the end
 		])

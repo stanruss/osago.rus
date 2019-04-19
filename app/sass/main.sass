@@ -49,7 +49,11 @@ hr
 
 .nav-item:last-child
 	border-right: none
-
+.nav-top.fixed-top
+	background-color: #fff
+	padding: 
+		bottom: 6px!important
+		top: 6px!important
 .header-sect
 	height: 580px
 	text-align: center
@@ -61,7 +65,7 @@ hr
 		z-index: 1
 	h5
 		z-index: 1
-	button
+	a
 		z-index: 1
 	.layout
 		position: absolute
@@ -76,5 +80,23 @@ hr
 	.tel
 		text-decoration: none
 		color: $dark-color
+.why-items
+	i
+		font-size: 45px
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		color: $success
+		width: 100px
+		height: 100px
+		border: 1px $accent-color solid
+		border-radius: 50%
+	sup
+		font-size: 15px
+	.dsup
+		font-size: 8px
+					
 
+		
 @import "media" // Always at the end
