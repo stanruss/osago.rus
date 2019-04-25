@@ -67,20 +67,23 @@ hr
 		z-index: 1
 	a
 		z-index: 1
-	.layout
-		position: absolute
-		background-color: #222
-		opacity: .5
-		top: 0
-		bottom: 0
-		left: 0
-		right: 0
-		z-index: 0
+.layout
+	position: absolute
+	background-color: #222
+	opacity: .5
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 0
 .first-sect
 	.tel
 		text-decoration: none
 		color: $dark-color
 .why-items
+	transition: all 0.5s ease
+	&:hover
+		transform: scale(1.08)
 	i
 		font-size: 45px
 		position: relative
@@ -88,15 +91,23 @@ hr
 		justify-content: center
 		align-items: center
 		color: $success
-		width: 100px
-		height: 100px
+		padding: 30px
 		border: 1px $accent-color solid
 		border-radius: 50%
 	sup
 		font-size: 15px
 	.dsup
 		font-size: 8px
-					
+.post
+	position: relative
+	background-image: url(../img/bg-2-1.jpg)	
+	background-size: cover
+	background-position: center center
+	height: 600px	
+	.col-md-4:first-child
+		background-color: #fff
+		height: 500px
+		margin-top: 50px			
 
 		
 @import "media" // Always at the end

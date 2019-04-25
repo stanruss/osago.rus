@@ -17,7 +17,7 @@ var gulp          = require('gulp'),
 
 gulp.task('js', function() {
 	return gulp.src([
-		'app/libs/jquery/dist/jquery.min.js',
+		'app/js/inputmask.js',
 		'app/libs/animate/animate-css.js',
 		'app/libs/animate/waypoints.min.js',
 		'app/libs/jQuery.equalHeights/jquery.equalheights.js',
